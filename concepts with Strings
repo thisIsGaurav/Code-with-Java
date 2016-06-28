@@ -1,0 +1,86 @@
+
+package stringprogram;
+
+/**
+ *
+ * @author gaurav
+ */
+public class StringProgram {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // String 
+        String c="Gaurav";
+        // find the character at any position 
+        char s=c.charAt(0);
+        System.out.println(s);
+        // check the equality,,,,
+        System.out.println(c.equalsIgnoreCase("GAURAV"));
+        //to find the length of the string....
+        System.out.println(c.length());
+        // to replace the string...
+        System.out.println(c.replace('G','g'));
+        // subString 
+        System.out.println(c.substring(3));
+        System.out.println(c.substring(0,3 ));
+        
+        //convert into lowercase
+        String f="GAURAV";
+        System.out.println(f.toLowerCase());
+        
+       // toString method to print object into string formate.
+        
+       System.out.println(f.toString()); 
+        
+       // uses of trim to trim the space
+       String sx =new String("    Srivastava      "); 
+       System.out.println(sx.toString());
+       System.out.println(sx.trim());
+       
+       // String buffer is use for making mutable String
+       
+       String a1="Sachin";
+       a1.concat("Srivastava");
+       System.out.println(a1.toString());
+       
+       StringBuffer ss=new StringBuffer("sachin");
+       ss.append("Srivastava");
+       System.out.println(ss.toString());
+       
+       
+       //methos of string buffer
+       
+       ss.append(123);
+       System.out.println(ss);
+       
+       // insert method of string buffer 
+       
+       ss.insert(2,"sssssssssss");
+       System.out.println(ss);
+       
+       // reverse the String
+       
+       StringBuffer h=new StringBuffer("Gaurav");
+       System.out.println(h.reverse());
+       
+       // replace the string......
+       System.out.println(h.replace(0, 6,"Srivastava"));
+       
+       //,,,,,,,,,,,,,,,,,String Builder........................
+       
+       StringBuilder vb=new StringBuilder("Hello");
+       vb.append("Gaurav");
+       System.out.println(vb);
+       System.out.println(vb.reverse());
+       vb.replace(0, 4,"Welcome");
+       System.out.println(vb);
+       
+       
+       
+       
+        
+    }
+    
+}
